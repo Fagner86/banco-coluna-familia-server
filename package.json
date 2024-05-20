@@ -1,0 +1,15 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "@datastax/astra-db-ts": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
