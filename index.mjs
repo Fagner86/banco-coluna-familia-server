@@ -6,8 +6,9 @@ import cors from 'cors';
 const app = express();
 app.use(cors());
 // Initialize the client
+
 const client = new DataAPIClient(process.env.TOKEN);
-const db = client.db(process.env.URL);
+const db = client.db(process.env.URL, { namespace: "default_keyspace" });
 
 app.use(express.json());
 
